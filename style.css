@@ -1,0 +1,84 @@
+header{
+    border: solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: up 3s forwards;
+    opacity: 0;
+}
+header img{
+animation: mix 3s infinite;
+width: 50px;
+height: 50px;
+border-radius: 50px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.a1{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: rgb(37, 14, 243);
+    color: white;
+    animation: left 3s infinite;
+    opacity: 0;
+}
+.a2{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: rgb(56, 12, 233);
+    color: white;
+    animation: right 3s infinite;
+    opacity: 0;
+}
+.a3{
+    width: 100%;
+}
+@keyframes mix {
+    from{
+     transform: rotate(720deg);
+    }
+    to{
+    transform: rotate(0deg);
+   
+    }
+}
+@keyframes up {
+    from{
+     transform: translateY(-100px);
+    }
+    to{
+    transform: translateY(0px);
+   opacity: 1;
+    } 
+}
+@keyframes left {
+from{
+transform: translateX(-200px)
+}
+to{
+transform: translateX(0px);
+opacity: 1;
+}
+
+}
+@keyframes right {
+from{
+transform: translateX(200px)
+}
+to{
+transform: translateX(0px);
+opacity: 1;
+}
+}
